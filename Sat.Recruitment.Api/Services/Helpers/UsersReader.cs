@@ -1,11 +1,11 @@
 ﻿using System;
 using System.IO;
 
-namespace Sat.Recruitment.Api.Controllers
+namespace Sat.Recruitment.Api.Services.Helpers
 {
-    public partial class UsersController
-    {
-        private StreamReader ReadUsersFromFile()
+	public class UsersReader
+	{
+        public StreamReader ReadUsersFromFile()
         {
             var path = Directory.GetCurrentDirectory() + "/Files/Users.txt";
 
@@ -16,3 +16,4 @@ namespace Sat.Recruitment.Api.Controllers
         }
     }
 }
+
